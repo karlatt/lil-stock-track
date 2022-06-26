@@ -2,8 +2,12 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
-  production: false
+import { Environment } from '../app/core/interfaces/environment';
+
+export const environment: Environment = {
+  production: true,
+  apiUrl: 'https://finnhub.io/api/v1',
+  token: 'capldgaad3i1rqbdbafg',
 };
 
 /*
